@@ -1,0 +1,98 @@
+\chapter{Ausarbeitung}
+\section{Aufgabe 1: Legendre-Funktionen}
+\subsection{a}
+Die unnormierten Legendrepolynome
+\begin{gather}
+	P_3(t) = \frac{2n-1}{n} t P_2(t) - \frac{n-1}{n}P_1(t) = \frac{5}{2}t^3-\frac{3}{2}t \\
+	P_4(t) = \frac{2n-1}{n} t P_3(t) - \frac{n-1}{n}P_2(t) = \frac{35}{8}t^4 - \frac{15}{4} + \frac{8}{3}
+\end{gather}
+Normierungsfaktoren:
+\begin{equation}
+	N_{l,0} = \sqrt{(2l+1)}	
+\end{equation}
+$N_{0,0} = 1$, $N_{1,0} = \sqrt{3}$, $N_{2,0} = \sqrt{5}$, $N_{3,0} = \sqrt{7}$, $N_{4,0} = 3$.
+\subsection{b}
+
+\clearpage
+\section{Aufgabe 2: Sphärisch-Harmonische Analyse}
+\subsection{a}
+Für $f_1$
+\begin{equation}
+	f_1(\lambda,\theta) = \cos^2\theta \Longrightarrow f_1(\lambda,t) = t^2 
+\end{equation}
+\begin{align}
+	c_{n,m}^{f_1} = & \frac{1}{4\pi} \int_{-1}^{1} \int_{0}^{2\pi} N_{n.m} \cdot P_{n,m}(t) \cdot \cos(m\lambda) \cdot f_1(\lambda,t) d\lambda dt \\
+	= & \frac{1}{4\pi} \int_{-1}^{1} N_{n.m} \cdot P_{n,m}(t) \cdot t^2  \left[\int_{0}^{2\pi} \cos(m\lambda) d\lambda\right]  dt
+\end{align}
+\begin{equation}
+	\int_{0}^{2\pi} \cos(m\lambda) d\lambda = \begin{cases}
+	0 & m \neq 0 \\
+	2\pi & m=0
+	\end{cases}
+\end{equation}
+Wenn $m=0$:
+\begin{equation}
+	c_{n,0}^{f_1} = \frac{N_{n,0}}{2} \int_{-1}^{1} P_{n,0}(t) \cdot t^2 dt
+\end{equation}
+Wenn $n$ ungerade ist, ist Grad von t von $P_{n,0}\cdot t^2$ auch ungerade. Weil $\int_{-1}^{1} t^{2n-1}dt = 0$, muss man nur $c_{0,0}^{f_1}$, $c_{2,0}^{f_1}$, $c_{4,0}^{f_1}$ berechnen.
+\begin{align}
+	& c_{0,0}^{f_1} = \frac{1}{2} \int_{-1}^{1} t^2 dt = \frac{1}{3} \\
+	& c_{2,0}^{f_1} = \frac{\sqrt{5}}{2} \int_{-1}^{1} (\frac{3}{2}t^2-\frac{1}{2})t^2dt = \frac{2\sqrt{5}}{15} \\
+	& c_{4,0}^{f_1} = \frac{3}{2} \int_{-1}^{1} (\frac{35}{8}t^4 - \frac{15}{4}t^2 + \frac{3}{8})t^2dt = 0
+\end{align}
+Für $f_2$: 
+Ergebnisse noch nicht sicher \\\\
+Für $f_3$:\\
+Ähnlich wie für $f_1$, $c_{n,m}^{f3} = 0$ wenn $m \neq 0$. Man benennt:
+\begin{equation*}
+	J_k = \int_{-1}^{1} t^k \cosh (t) dt
+\end{equation*}
+Dann:
+\begin{align}
+	c_{0,0}^{f_3} = \ & \frac{1}{2} \int_{-1}^{1} 1 \cosh (t) dt = \frac{1}{2} J_0 \\
+	c_{1,0}^{f_3} = \ & \frac{\sqrt{3}}{2} \int_{-1}^{1} t \cosh (t) dt = \frac{\sqrt{3}}{2}J_1 \\
+	c_{2,0}^{f_3} = \ & \frac{\sqrt{5}}{2} \int_{-1}^{1} (\frac{3}{2}t^2-\frac{1}{2})\cosh (t) dt = \frac{3\sqrt{5}}{4}J_2-\frac{\sqrt{5}}{4} J_0 \\
+	c_{3,0}^{f_3} = \ & \frac{\sqrt{7}}{2} \int_{-1}^{1} (\frac{5}{2}t^3 - \frac{3}{2}t)\cosh (t) dt = \frac{5\sqrt{7}}{4}J_3 - \frac{3\sqrt{7}}{4} J_1 \\
+	c_{4,0}^{f_3} = \ & \frac{3}{2} \int_{-1}^{1} (\frac{35}{8}t^4 - \frac{15}{4}t^2 + \frac{3}{8}) \cosh (t) dt = \frac{105}{16}J_4 - \frac{45}{8}J_2 + \frac{9}{16}J_0
+\end{align}
+$J_0$ kann direkt berechnet werden:
+\begin{equation}
+	J_0 = \int_{-1}^{1} \cosh (t)dt = \left[\sinh(t)\right]^1_{-1} = 2\sinh(1)
+\end{equation}
+$J_1$ kann via partielle Integration berechnet werden:
+\begin{align}
+	J_1 & = \int_{-1}^{1} t \cosh(t) dt \\
+	 	& = \left[t\sinh(t)\right]^{1}_{-1} - \int_{-1}^{1} \sinh(t) dt \\
+	 	& = \left[t\sinh(t)\right]^{1}_{-1} - \left[\cosh(t)\right]^{1}_{-1} \\
+	 	& = 0
+\end{align}
+$J_2$ bis $J_4$ werden via partielle Integration rekursive berechnet: 
+\begin{align}
+	J_k = & \int_{-1}^{1} t^k \cosh(t) dt \\
+		= & \left[t^k\sinh(t)\right]_{-1}^{1} - \int_{-1}^{1}k t^{k-1} \sinh(t) dt \\
+		= & \left[t^k\sinh(t)\right]_{-1}^{1} - k\left[t^{k-1}\cosh(t)\right]_{-1}^{1} + k(k-1)\int_{-1}^{1} \cosh(t)t^{k-2}dt \\
+		= & \left[t^k\sinh(t)\right]_{-1}^{1} - k\left[t^{k-1}\cosh(t)\right]_{-1}^{1} + k(k-1)J_{k-2}
+\end{align}
+Wenn $t$ ungerade ist: $J_k = 0-0+k(k-1)J_{k-2}$. Denn $J_1 = 0$, $J_k = 0$ für alle ungerade $k$. \\\\
+Für gerade $k$:
+\begin{align}
+	J_k = 2\sinh(1) - 2k\cosh(1) + k(k-1)J_{k-2} 
+\end{align}
+Ansatz:
+\begin{align}
+	J_2 = \ & 2\sinh(1) - 4\cosh(1) + 2J_0 \\
+	= \ & 2\sinh(1) - 4\cosh(1) + 4 \sinh(1) \\
+	= \ & 6\sinh(1) - 4\cosh(1) \\
+	J_4 = \ & 2\sinh(1) - 8\cosh(1) + 12 J_2\\
+		= \ & 2\sinh(1) - 8\cosh(1) + 12 (6\sinh(1) - 4\cosh(1))\\
+		= \ & 74 \sinh(1) - 56\cosh(1)
+\end{align}
+Berechnung von Koeffizienten:
+\begin{align}
+	c_{0,0}^{f_3} = \ & \sinh(1) \\
+	c_{1,0}^{f_3} = \ & 0 \\
+	c_{2,0}^{f_3} = \ & 4\sqrt{5}\sinh(1) - 3\sqrt{5} \cosh(1) \\
+	c_{3,0}^{f_3} = \ & 0 \\
+	c_{4,0}^{f_3} = \ & 453\sinh(1) - 345\cosh(1)
+\end{align}
+\subsection{b}
