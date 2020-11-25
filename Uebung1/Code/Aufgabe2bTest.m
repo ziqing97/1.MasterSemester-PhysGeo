@@ -1,4 +1,5 @@
 %%
+clc
 % Nicholas Schneider & Ziqing Yu
 % 25/11/2020
 
