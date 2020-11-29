@@ -12,6 +12,24 @@ Normierungsfaktoren:
 \end{equation}
 $N_{0,0} = 1$, $N_{1,0} = \sqrt{3}$, $N_{2,0} = \sqrt{5}$, $N_{3,0} = \sqrt{7}$, $N_{4,0} = 3$.
 \subsection{b}
+Um zu untersuchen, ob auch die zugeordneten Legendrefunktionen immer orthogonal zueinander sind, muss folgende Bedingung überprüft werden: 
+
+\begin{gather}
+\int_{-1}^{1} P_n(t) \cdot P_m(t) = 0   
+\end{gather}
+
+Nacheinander werden die Legendrefunktionen auf Orthogonalität geprüft. 
+
+\begin{gather}
+\int_{-1}^{1} P_1(t) \cdot P_2(t) = 0 ~\checkmark \\
+\int_{-1}^{1} P_1(t) \cdot P_3(t) = 0 ~\checkmark \\
+\int_{-1}^{1} P_1(t) \cdot P_4(t) = 0 ~\checkmark \\
+\int_{-1}^{1} P_2(t) \cdot P_4(t) = 0 ~\checkmark \\
+\int_{-1}^{1} P_2(t) \cdot P_3(t) = \dfrac{1}{2} \neq 0 
+\end{gather}
+
+Durch die Berechnung aus 1.9 wurde gezeigt, dass nicht alle Legendrefunktionen immer auch orthogonal zueinander sind. 
+
 
 \clearpage
 \section{Aufgabe 2: Sphärisch-Harmonische Analyse}
