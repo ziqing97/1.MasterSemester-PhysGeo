@@ -1,6 +1,6 @@
 function[Plm] = Normalized_Lengendre(l_num,theta)
 % mit dieser Funktion kann man normailzed Lendendre rekusiv rechnen
-t_num = cosd(theta);
+t_num = cos(theta);
 Plm = cell(l_num + 1);
 Plm(:,:) = {NaN};
 Plm(1,1) = {ones(1,length(theta))};
