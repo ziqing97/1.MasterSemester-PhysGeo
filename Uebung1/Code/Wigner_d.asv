@@ -1,4 +1,4 @@
-function[d] = Wigner_d(m,n,k,beta)
+function[d] = Wigner_d(m,n,k,t,beta)
 % Nicholas Schneider & Ziqing Yu
 % 30/11/2020
 % Beschreibung der Funktion: 
@@ -23,10 +23,8 @@ t1 = max(0,k-m);
 t2 = min(n-m,n+k);
 
 Sigma = 0;
-for t = t1:t2
-    a = m - k + 2 * t;
-    Sigma = Sigma + binomfun(n+k,t) * binomfun(n-k,n-m-t) * (-1)^t * cos(beta/2)^(2*n-a) * sin(beta/2)^a;
+for i = t1:t2
+    
 end
-d = SQRT * Sigma;
 
 end
