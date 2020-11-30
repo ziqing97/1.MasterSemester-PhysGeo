@@ -1,12 +1,14 @@
 %%
-clc
 % Nicholas Schneider & Ziqing Yu
 % 25/11/2020
+clc
+close all
 
 % Aufgabe 2b test
-% f2
+% Meshgrid bauen
 [lambda,theta] = meshgrid(linspace(-pi,pi,200), linspace(0,pi,100));
 
+% f2
 t21 = sin(theta).^3 .* sin(lambda);
 t22 = 0.75 * sin(theta) .* sin(lambda) - 0.25 * sin(3*theta) .* sin(lambda);
 d2 = t21 - t22;
