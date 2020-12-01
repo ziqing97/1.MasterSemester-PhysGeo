@@ -1,10 +1,12 @@
 function[d] = Wigner_d(m,n,k,beta)
 % Nicholas Schneider & Ziqing Yu
 % 30/11/2020
-% Beschreibung der Funktion: 
-% input:
+% Mit dieser Funktion kann man die Wigner-d-Funktion berechnen. 
+% input: Grad n,
+%        Ordnung m und k
+%        Winkel beta
 
-% output:
+% output: Wigner-d-Funktion
 
 
 % pruefen, ob m,n,k ganzzahlig ist

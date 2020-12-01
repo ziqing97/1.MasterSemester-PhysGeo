@@ -1,4 +1,3 @@
-
 %% Physikalische Geodäsie Übung 1
 % Aufgabe 3
 % Nicholas Schneider & Ziqing Yu
@@ -13,20 +12,24 @@ gamma = pi / 12;
 % Laenge & Breite des Zentrums
 alpha = (9 + 11/60) / 180 * pi;
 beta = (48 + 46/60) /180 * pi;
+beta = pi/2 - beta;
 
 n = 6;
 m = 4;
 
+len_b = 180;
+len_l = 360;
+
 % P(6,4)
-theta = linspace(0,pi,181);
+theta = linspace(0,pi,len_b);
 P_all = Normalized_Lengendre(6,theta);
 P_64 = P_all{7,5};
-P_64 = repmat(P_64,361,1);
+P_64 = repmat(P_64,len_l,1);
 
 % Y(original)
-lambda = linspace(-pi,pi,361);
+lambda = linspace(-pi,pi,len_l);
 lambda = lambda';
-lambda = repmat(lambda,1,181);
+lambda = repmat(lambda,1,len_b);
 lambda = lambda';
 P_64 = P_64';
 Y_64 = P_64 .* exp(1i * m *lambda) * (-1)^(m) / 2 / sqrt(2 * pi);
@@ -34,29 +37,29 @@ Y_64 = real(Y_64);
 figure
 hm = imagesc(Y_64);
 colormap('jet')
-
-
-
-
+title('normal')
+ax = gca;
+set(ax,'xtick',datenum(TWSA_all(1,1):1:TWSA_all(end,1),1,1))
+set(ax,'xticklabel',TWSA_all(1,1):1:TWSA_all(end,1))
 
 % Y(gedreht)
 Y_64d = 0;
 for k = -n:n
     lambda2 = lambda - alpha;
     if (k<0)
-        P = P_all{7,(-k+1);
-        P = P';
-        Y = P * exp(1i * abs(k) *lambda2) / 2 / sqrt(2 * pi);
+        Pnk = P_all{7,(-k+1)};
+        Pnk = Pnk';
+        Ynk = Pnk .* exp(-1i * abs(k) *lambda2) / 2 / sqrt(2 * pi);
     elseif (k>0)
-        P = P_all(7,k+1);
-        P = P';
-        Y = P * exp(1i * abs(k) *lambda2) * (-1)^(abs(k)) / 2 / sqrt(2 * pi);
+        Pnk = P_all{7,k+1};
+        Pnk = Pnk';
+        Ynk = Pnk .* exp(1i * abs(k) *lambda2) * (-1)^(abs(k)) / 2 / sqrt(2 * pi);
     else
-        P = P_all(7,1);
-        P = P';
-        Y = P * exp(1i * abs(k) *lambda2) / 2 / sqrt(pi);
+        Pnk = P_all{7,1};
+        Pnk = Pnk';
+        Ynk = Pnk .* exp(1i * abs(k) *lambda2) / 2 / sqrt(pi);
     end
-    Y_64d = Y_64d + Wigner_d(m,n,k,beta) * Y;
+    Y_64d = Y_64d + Wigner_d(m,n,k,beta) * Ynk;
 end
 
 figure
@@ -64,3 +67,10 @@ Y_64d = Y_64d * exp(1i * m * gamma);
 Y_64d = real(Y_64d);
 hm2 = imagesc(Y_64d);
 colormap('jet')
+title('Rotation mit Wigner_d')
+
+%
+transformation=@Meta_transformation;
+[L,B] = meshgrid(linspace(-pi,pi,len_l), linspace(-pi/2,pi/2,len_b));
+[LM,BM]=transformation(B,L,pi/2 - beta,alpha,gamma);
+

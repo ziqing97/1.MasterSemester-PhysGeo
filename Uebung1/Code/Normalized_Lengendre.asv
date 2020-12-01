@@ -1,8 +1,6 @@
 function[Plm] = Normalized_Lengendre(l_num,theta)
 % mit dieser Funktion kann man normailzed Lendendre rekusiv rechnen
-% input: Grad l_num
-%        Breite theta in radiant (kann Vektor sein)
-% output: Lengendre Funktion bis l_num
+% input: l
 t_num = cos(theta);
 Plm = cell(l_num + 1);
 Plm(:,:) = {NaN};

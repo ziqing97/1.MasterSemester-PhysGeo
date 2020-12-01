@@ -1,4 +1,5 @@
 function[binom] = binomfun(a,b)
+% Diese Funktion berechnet die Binomialkoeffiyienten
     if (2*b)>a
         b = a - b;
     end
