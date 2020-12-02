@@ -3,10 +3,11 @@ function[Plm] = Normalized_Lengendre(l_num,theta)
 % input: Grad l_num
 %        Breite theta in radiant (kann Vektor sein)
 % output: Lengendre Funktion bis l_num
+[a,b] = size(theta);
 t_num = cos(theta);
 Plm = cell(l_num + 1);
 Plm(:,:) = {NaN};
-Plm(1,1) = {ones(1,length(theta))};
+Plm(1,1) = {ones(a,b)};
 Plm(2,1) = {sqrt(3) .* t_num};
 Plm(2,2) = {sqrt(3 * (1 - t_num.^2))};
 for il = 2 : l_num
