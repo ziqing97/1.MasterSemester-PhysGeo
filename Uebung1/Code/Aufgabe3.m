@@ -44,22 +44,21 @@ colorbar
 Y_64d = 0;
 for k = -n:n
     lambda2 = lambda - alpha;
-    lambda2(lambda2<-pi) = lambda2(lambda2<-pi) + 2*pi;
     if (k<0)
         Pnk = P_all{7,(-k+1)};
-        Ynk = Pnk .* exp(-1i * abs(k) *lambda2) / 2 / sqrt(2 * pi);
+        Ynk = Pnk .* exp(1i * k *lambda2) / 2 / sqrt(2 * pi);
     elseif (k>0)
         Pnk = P_all{7,k+1};
-        Ynk = Pnk .* exp(1i * abs(k) *lambda2) * (-1)^(abs(k)) / 2 / sqrt(2 * pi);
+        Ynk = Pnk .* exp(1i * k *lambda2) * (-1)^k / 2 / sqrt(2 * pi);
     else
         Pnk = P_all{7,1};
-        Ynk = Pnk .* exp(1i * abs(k) *lambda2) / 2 / sqrt(pi);
+        Ynk = Pnk .* exp(1i * k *lambda2) / 2 / sqrt(pi);
     end
     Y_64d = Y_64d + Wigner_d(m,n,k,beta) * Ynk;
 end
 
 figure
-Y_64d = Y_64d * exp(1i * m * gamma);
+Y_64d = Y_64d * exp(-1i * m * gamma);
 Y_64d = real(Y_64d);
 hm2 = imagesc(Y_64d);
 colormap('jet')

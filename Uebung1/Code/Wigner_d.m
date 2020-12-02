@@ -14,7 +14,7 @@ if (rem(m,1)~=0 || rem(n,1)~=0 || rem(k,1)~=0)
     error('n,m,k müssen ganzzahlig sein.')
 end
 % pruefen, ob -n<=k und m<=n
-if (-n > k || m> n)
+if (-n > k || m> n || -n >k || k>n)
     error('Bedingungen -n<=k oder m<=n nicht erfüllt.')
 end
 % SQRT berechnen
