@@ -69,7 +69,7 @@ yticks(0:30:180);
 yticklabels({'0','30','60','90','120','150','180'})
 colorbar
 
-% 
+%  Koordinaten System
 gamma = pi / 12;
 alpha = (9 + 11/60) / 180 * pi;
 beta = (48 + 46/60) /180 * pi;

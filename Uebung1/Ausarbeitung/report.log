@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.2)  25 NOV 2020 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.2)  2 DEC 2020 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1201,19 +1201,19 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 [1
 
 
-] [2
+] [2] [3
 
-] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 97--100
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 133--136
+] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
 
  []
 
-[5]) [6
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 145--148
+
+ []
+
+[6]) [7
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
@@ -1226,8 +1226,8 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  ) 
 Here is how much of TeX's memory you used:
- 28235 strings out of 492162
- 551929 string characters out of 6125271
+ 28241 strings out of 492162
+ 552010 string characters out of 6125271
  762924 words of memory out of 5000000
  32182 multiletter control sequences out of 15000+600000
  560161 words of font info for 91 fonts, out of 8000000 for 9000
@@ -1242,10 +1242,10 @@ ve/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><f:/texlive/texlive/20
 exmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><f:/texlive/texlive/2019/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb><f:/texlive/texlive/2019/texmf-dist/font
 s/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (7 pages, 117339 bytes).
+Output written on report.pdf (8 pages, 121506 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 74 named destinations out of 1000 (max. 500000)
+ 210 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
+ 80 named destinations out of 1000 (max. 500000)
  85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
