@@ -55,8 +55,8 @@ Wenn $m=0$:
 Wenn $n$ ungerade ist, ist der Grad von t von $P_{n,0}\cdot t^2$ auch ungerade. Da $\int_{-1}^{1} t^{2n-1}dt = 0$, muss man nur $c_{0,0}^{f_1}$, $c_{2,0}^{f_1}$, $c_{4,0}^{f_1}$ berechnen.
 \begin{align}
 	& c_{0,0}^{f_1} = \frac{1}{2} \int_{-1}^{1} t^2 dt = \frac{1}{3} \\
-	& c_{2,0}^{f_1} = \frac{\sqrt{5}}{2} \int_{-1}^{1} (\frac{3}{2}t^2-\frac{1}{2})t^2dt = \frac{2\sqrt{5}}{15} \\
-	& c_{4,0}^{f_1} = \frac{3}{2} \int_{-1}^{1} (\frac{35}{8}t^4 - \frac{15}{4}t^2 + \frac{3}{8})t^2dt = 0
+	& c_{2,0}^{f_1} = \frac{\sqrt{5}}{2} \int_{-1}^{1} \left(\frac{3}{2}t^2-\frac{1}{2}\right)t^2dt = \frac{2\sqrt{5}}{15} \\
+	& c_{4,0}^{f_1} = \frac{3}{2} \int_{-1}^{1} \left(\frac{35}{8}t^4 - \frac{15}{4}t^2 + \frac{3}{8}\right)t^2dt = 0
 \end{align}
 Für $f_2$, weil:
 \begin{align}
@@ -68,11 +68,11 @@ Für $f_2$, weil:
 \end{align}
 Man muss nur $m=1$ für $Y_{n,1} = P_{n,1}\sin(\lambda)$ berechnen. Wenn $n$ gerade ist, ist der Grad von t ungerade. Deshalb sind die Berechnungen nur für $c_{1,1}^{f_2}$ und $c_{3,1}^{f_2}$ notwendig.
 \begin{align}
-	c_{1,1}^{f_1} = \ & \frac{1}{4\pi}\int_{-1}^{1}(\sqrt{1-t^2})^3\sqrt{3}\sqrt{1-t^2}\pi dt\\
-	= \ & \frac{\sqrt{3}}{4} \int_{-1}^{1} (t^4 - 2t^2 +1)dt \\
+	c_{1,1}^{f_1} = \ & \frac{1}{4\pi}\int_{-1}^{1}\left(\sqrt{1-t^2}\right)^3\sqrt{3}\sqrt{1-t^2}\pi dt\\
+	= \ & \frac{\sqrt{3}}{4} \int_{-1}^{1} \left(t^4 - 2t^2 +1\right)dt \\
 	= \ & \frac{4\sqrt{3}}{15} \\
-	c_{3,1}^{f_2} = \ & \frac{1}{4\pi}\int_{-1}^{1}(\sqrt{1-t^2})^3\sqrt{\frac{7}{6}}\cdot \frac{3}{2}(5t^2-1)\sqrt{1-t^2} \pi dt \\
-	= \ & \frac{3}{8}\sqrt{\frac{7}{6}}\int_{-1}^{1}(5t^6 - 11t^4 + 7t^2-1) dt \\
+	c_{3,1}^{f_2} = \ & \frac{1}{4\pi}\int_{-1}^{1}\left(\sqrt{1-t^2}\right)^3\sqrt{\frac{7}{6}}\cdot \frac{3}{2}\left(5t^2-1\right)\sqrt{1-t^2} \pi dt \\
+	= \ & \frac{3}{8}\sqrt{\frac{7}{6}}\int_{-1}^{1}\left(5t^6 - 11t^4 + 7t^2-1\right) dt \\
 	= \ & -\frac{4}{35} \sqrt{\frac{7}{6}} \\ 
 	= \ & -\frac{2\sqrt{42}}{105}
 \end{align}
@@ -85,9 +85,9 @@ Dann:
 \begin{align}
 	c_{0,0}^{f_3} = \ & \frac{1}{2} \int_{-1}^{1} 1 \cosh (t) dt = \frac{1}{2} J_0 \\
 	c_{1,0}^{f_3} = \ & \frac{\sqrt{3}}{2} \int_{-1}^{1} t \cosh (t) dt = \frac{\sqrt{3}}{2}J_1 \\
-	c_{2,0}^{f_3} = \ & \frac{\sqrt{5}}{2} \int_{-1}^{1} (\frac{3}{2}t^2-\frac{1}{2})\cosh (t) dt = \frac{3\sqrt{5}}{4}J_2-\frac{\sqrt{5}}{4} J_0 \\
-	c_{3,0}^{f_3} = \ & \frac{\sqrt{7}}{2} \int_{-1}^{1} (\frac{5}{2}t^3 - \frac{3}{2}t)\cosh (t) dt = \frac{5\sqrt{7}}{4}J_3 - \frac{3\sqrt{7}}{4} J_1 \\
-	c_{4,0}^{f_3} = \ & \frac{3}{2} \int_{-1}^{1} (\frac{35}{8}t^4 - \frac{15}{4}t^2 + \frac{3}{8}) \cosh (t) dt = \frac{105}{16}J_4 - \frac{45}{8}J_2 + \frac{9}{16}J_0 \\
+	c_{2,0}^{f_3} = \ & \frac{\sqrt{5}}{2} \int_{-1}^{1} \left(\frac{3}{2}t^2-\frac{1}{2}\right)\cosh (t) dt = \frac{3\sqrt{5}}{4}J_2-\frac{\sqrt{5}}{4} J_0 \\
+	c_{3,0}^{f_3} = \ & \frac{\sqrt{7}}{2} \int_{-1}^{1} \left(\frac{5}{2}t^3 - \frac{3}{2}t\right)\cosh (t) dt = \frac{5\sqrt{7}}{4}J_3 - \frac{3\sqrt{7}}{4} J_1 \\
+	c_{4,0}^{f_3} = \ & \frac{3}{2} \int_{-1}^{1} \left(\frac{35}{8}t^4 - \frac{15}{4}t^2 + \frac{3}{8}\right) \cosh (t) dt = \frac{105}{16}J_4 - \frac{45}{8}J_2 + \frac{9}{16}J_0 \\
 \end{align}
 $J_0$ kann direkt berechnet werden:
 \begin{equation}
@@ -151,58 +151,78 @@ Für $f_3$:
 	& + (453\sinh(1) - 345\cosh(1)) \cdot 3 \cdot (\frac{35}{8}\cos^4\theta - \frac{15}{4}\cos^2\theta + \frac{3}{8})
 \end{align}
 Mit MATLAB ist das maximale Ergebnis von $\cosh(\cos \theta) -\sum_n \sum_m c_{n,m}^{f_2} \bar{Y}_{n,m}(\lambda,t) $ im Bereich von $10^{-5}$ (bis zum $n = m = 4$)
-
+\clearpage
 \section{Aufgabe 3: Rotation von Kugelflächenfunktionen}
-
 \subsection{Implementierung der Wigner-d-Funktionen $d_{km}^n(\beta)$}
-
 Die zu implementierende (ineffektive) Summendarstellung sieht wie folgt aus: 
-
 \begin{gather}
 d_{km}^n(\beta) = \sqrt{\dfrac{(n+m)!(n-m)!}{(n+k)!(n-k)!}} \sum_{t=t_1}^{t_2} \binom{n+k}{t} \binom{n-k}{n-m-t} (-1)^t \left( \cos \dfrac{\beta}{2} \right)^{2n-a} \left( \sin \dfrac{\beta}{2} \right)^a \\
-mit ~~~ a = m-k+2t, ~~~ t_1 = max(0,k-m) ~ und ~ t_2 = min(n-m, n+k)
+\text{mit} ~~~ a = m-k+2t, ~~~ t_1 = max(0,k-m) ~ \text{und} ~ t_2 = min(n-m, n+k)
 \end{gather}
-
 Die Funktion ist auf der nächsten Seite zu sehen oder dem Anhang zu entnehmen. 
+\begin{lstlisting}
 
-\includepdf{Wigner.pdf}
+	function[d] = Wigner_d(m,n,k,beta)
+	% Nicholas Schneider & Ziqing Yu
+	% 30/11/2020
+	% Mit dieser Funktion kann man die Wigner-d-Funktion berechnen. 
+	% input: Grad n,
+	%        Ordnung m und k
+	%        Winkel beta	
+	% output: Wigner-d-Funktion
 
+	% pruefen, ob m,n,k ganzzahlig ist
+	if (rem(m,1)~=0 || rem(n,1)~=0 || rem(k,1)~=0)
+	error('n,m,k muessen ganzzahlig sein.')
+	end
+	% pruefen, ob -n<=k und m<=n
+	if (-n > k || m> n || -n >k || k>n)
+	error('Bedingungen -n<=k oder m<=n nicht erfuellt.')
+	end
+	% SQRT berechnen
+	SQRT = sqrt((factorial(n+m) * factorial(n-m)) ...
+	/ (factorial(n+k) * factorial(n-k)));
+	
+	%
+	t1 = max(0,k-m);
+	t2 = min(n-m,n+k);
+	
+	Sigma = 0;
+	for t = t1:t2
+	a = m - k + 2 * t;
+	Sigma = Sigma + binomfun(n+k,t) * binomfun(n-k,n-m-t) ...
+	* (-1)^t * cos(beta/2)^(2*n-a) * sin(beta/2)^a;
+	end
+	d = SQRT * Sigma;
+	end
+\end{lstlisting}
 \subsection{Rotation der Kugelflächenfunktionen und Visualisierung}
-
-Mit dem Winkel $\gamma=\varpi/2$ soll die Rotation der Kugelflächenfunktion getestet werden. Dabei soll der Meta-Pol in Stuttgart liegen. 
-
+Mit dem Winkel $\gamma=\frac{\pi}{12}$ soll die Rotation der Kugelflächenfunktion $\hat{Y}_{6,4}$ getestet werden. Dabei soll der Meta-Pol in Stuttgart ($\Lambda = 9^{\circ}11'$, $\Phi = 48^{\circ}46'$) liegen. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale = 0.6]{unrotiert.png}
 \caption{Ergebnis der Kugelflächenfunktion unrotiert}
 \label{unrot}
 \end{figure}
-
 Abbildung \ref{unrot} zeigt zunächst das unrotierte Ergebnis der Kugelflächenfunktion. 
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale = 0.6]{wigner.png}
 	\caption{Rotation der Kugelflächenfunktion über Wigner}
 	\label{wigner}
 \end{figure}
-
 Abbildung \ref{wigner} präsentiert das Ergebnis der Rotation der Kugelflächenfunktion, die durch die Berechnung über Wigner entstanden ist. 
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale = 0.6]{rotiert.png}
 	\caption{Rotation der Kugelflächenfunktion mit Stuttgart als Meta-Pol}
 	\label{rot}
 \end{figure}
-
 In Abbildung \ref{rot} ist die Rotation der Kugelflächenfunktion mit Stuttgart als Meta-Pol dargestellt. 
-
 \begin{figure}[H]
  	\centering
  	\includegraphics[scale = 0.6]{diff.png}
  	\caption{Differenz beider Berechnungen}
  	\label{diff}
 \end{figure}
-
-In Abbildung \ref{diff} sieht man nun den Plot der Differenzen beider Berechnungen. 
+In Abbildung \ref{diff} sieht man nun den Plot der Differenzen beider Berechnungen. Die maximale Differenzen sind im Bereich von $3 \cdot 10^{-15}$.
