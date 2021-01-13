@@ -41,12 +41,7 @@ for i = 1:8
 end
 U8 = GM / r * (1 - U_mittelwert);
 
-figure
-hold on 
-plot(U2)
-plot(U4)
-plot(U6)
-plot(U8)
+figur
 
 
 
@@ -59,7 +54,6 @@ U8 = GM / r * (1 - U_mittelwert) + omega^2 / 2 * r^2 .* (cos(phi)).^2;
 U8 = GM / r * (1 - U_mittelwert);
 U8map = repmat(U8',1,360);
 
-figure
 hm = imagesc(U8map);
 colormap('jet')
 title('Somigliana-Pizzetti')
