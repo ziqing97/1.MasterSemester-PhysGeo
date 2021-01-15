@@ -37,17 +37,63 @@ e = \dfrac{E}{a}, ~~~~~ e'= \dfrac{E}{b} \\
 \hat{m} = \dfrac{\omega^2 a^2 b }{GM}, ~~~~~ q_0 = Q_{2,0}^{*} \left(\dfrac{b}{E}\right)
 \end{gather*}
 
-Im ersten Schritt gilt es beide Darstellungen des Potentials mit dem Radius $r$ zu multiplizieren und folglich die Grenzwerte 	\dq im Unendlichen\dq zu betrachten. Somit gilt: 
+Im ersten Schritt gilt es beide Darstellungen des Potentials mit dem Radius $r$ zu multiplizieren und folglich die Grenzwerte 	\dq im Unendlichen\dq zu betrachten. Aus der Grenzwertbetrachtung $\lim_{r \rightarrow \infty}$ der sphärischen Koordinaten kann folgendes festgestellt werden:
+
+\begin{align*}
+\lim_{r \rightarrow \infty} r \cdot U^{Sph}(\lambda,\varphi,r) = \lim_{r \rightarrow \infty} r \cdot \left(\dfrac{GM}{r} \left[1-\sum_{n=1}^{L} \left(\dfrac{a}{r}\right)^{2n} J_{2n} P_{2n} (\sin \varphi)\right] + \dfrac{\omega^2}{2} r^2 \cos^2 \varphi\right) = GM
+\end{align*}
+
+Der Grenzwert liegt bei $GM$. Dementsprechend kann davon ausgegangen werden, dass für die Grenzwertbetrachtung bei ellipsoidischen Koordinaten das gleiche gilt:
 
 \begin{align*}
 \lim_{r \rightarrow \infty} r \cdot U^{Ell}(\lambda,\beta,u) = \lim_{r \rightarrow \infty} r \cdot \left(\left(U_0 - \dfrac{\omega^2 a^2}{3}\right) \dfrac{Q_{0,0}^{*}\left(\dfrac{u}{E}\right)}{{Q_{0,0}^{*}\left(\dfrac{b}{E}\right)}} + \dfrac{\omega^2 a^2 Q_{2,0}^{*}\left(\dfrac{u}{E}\right)}{3 Q_{2,0}^{*}\left(\dfrac{b}{E}\right)} P_{2,0}(\sin \beta)\right) = GM
 \end{align*}
 
-beziehungsweise
+Im Anschluss geht es darum einen Zusammenhang zwischen den fünf definierenden Größen ($a,b,\omega,GM,U_0$) zu erreichen, indem kleine Größen vernachlässigt werden. Zunächst müssen allerdings die Funktionen $Q_{0,0}^{*}$ und $Q_{2,0}^{*}$ durch die ersten Terme ihrer Taylorreihen approximiert werden. Wie oben beschrieben gilt: 
 
 \begin{align*}
-\lim_{r \rightarrow \infty} r \cdot U^{Sph}(\lambda,\varphi,r) = \lim_{r \rightarrow \infty} r \cdot \left(\dfrac{GM}{r} \left[1-\sum_{n=1}^{L} \left(\dfrac{a}{r}\right)^{2n} J_{2n} P_{2n} (\sin \varphi)\right] + \dfrac{\omega^2}{2} r^2 \cos^2 \varphi\right) = GM
+Q_{0,0}^{*} = \arctan \left(\dfrac{E}{u}\right)
 \end{align*}
+
+Die Reihenentwicklung des $\arctan$ lautet: 
+
+\begin{align*}
+\arctan(x) = x- \dfrac{x^3}{3} + \dfrac{x^5}{5} + ...
+\end{align*}
+
+Durch einsetzen von $\dfrac{E}{u}$ in $\arctan(x)$ ergibt sich also: 
+
+\begin{align*}
+Q_{0,0}^{*} \left(\dfrac{u}{E}\right) = \left(\dfrac{E}{u}\right)- \dfrac{\left(\dfrac{E}{u}\right)^3}{3}+ \dfrac{\left(\dfrac{E}{u}\right)^5}{5} + ...
+\end{align*}
+
+\begin{align*}
+\approx \left(\dfrac{E}{u}\right) - \dfrac{1}{3} \cdot \left(\dfrac{E}{u}\right)^3 + \dfrac{1}{5} \left(\dfrac{E}{u}\right)^5 
+\end{align*}
+
+Gleichermaßen wird $\dfrac{E}{b}$ eingesetzt:
+
+\begin{align*}
+Q_{0,0}^{*} \left(\dfrac{b}{E}\right) \approx \left(\dfrac{E}{b}\right) - \dfrac{1}{3} \cdot \left(\dfrac{E}{b}\right)^3 + \dfrac{1}{5} \left(\dfrac{E}{b}\right)^5
+\end{align*}
+
+Für $Q_{2,0}^{*}$ gilt: 
+
+\begin{align*}
+Q_{2,0}^{*}\left(\dfrac{b}{E}\right) = \dfrac{1}{2} \left[\left(3 \left(\dfrac{b}{E}\right)^2+1\right) \text{arccot} \left(\dfrac{b}{E}\right)-3 \left(\dfrac{b}{E}\right)\right]
+\end{align*}
+
+Daraus ergibt sich für die Approximation: 
+
+\begin{align*}
+Q_{2,0}^{*}\left(\dfrac{b}{E}\right) \dfrac{1}{2} \left[\left(3 \left(\dfrac{b}{E}\right)^2+1\right) \cdot \left(\left(\dfrac{E}{b}\right)-\dfrac{\left(\dfrac{E}{b}\right)^3}{3}+\dfrac{\left(\dfrac{E}{b}\right)^5}{5}+...\right)-3 \left(\dfrac{b}{E}\right)\right]
+\end{align*}
+
+\begin{align*}
+\approx \dfrac{2}{15} \left(\dfrac{E}{u}\right)^3 + \dfrac{1}{10} \left(\dfrac{E}{u}\right)^5
+\end{align*}
+
+
 
 \section*{Aufgabe 2}
 
