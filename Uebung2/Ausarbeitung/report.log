@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2020.5.14)  15 JAN 2021 12:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2020.5.14)  17 JAN 2021 21:34
 entering extended mode
 **./report.tex
 (report.tex
@@ -892,10 +892,10 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 Package scrkbase Info: You've told me to redefine the font selection of the
 (scrkbase)             element `sectioning' that is an alias of element
-(scrkbase)             `disposition' on input line 61.
+(scrkbase)             `disposition' on input line 62.
 Package scrkbase Info: You've told me to redefine the font selection of the
 (scrkbase)             element `pagehead' that is an alias of element
-(scrkbase)             `pageheadfoot' on input line 64.
+(scrkbase)             `pageheadfoot' on input line 65.
 
 ("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlay
 er-scrpage.sty"
@@ -1314,33 +1314,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 [1
 
 
-] [2]
-<Images/ergeb.png, id=52, 526.96875pt x 395.22656pt>
+] [2] [3]
+<Images/ergeb.png, id=58, 526.96875pt x 395.22656pt>
 File: Images/ergeb.png Graphic file (type png)
 <use Images/ergeb.png>
-Package pdftex.def Info: Images/ergeb.png  used on input line 105.
+Package pdftex.def Info: Images/ergeb.png  used on input line 148.
 (pdftex.def)             Requested size: 316.18369pt x 237.13776pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 106.
- [3]
-<Images/SP.png, id=60, 526.96875pt x 395.22656pt>
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 149.
+ [4]
+<Images/SP.png, id=65, 526.96875pt x 395.22656pt>
 File: Images/SP.png Graphic file (type png)
 <use Images/SP.png>
-Package pdftex.def Info: Images/SP.png  used on input line 116.
+Package pdftex.def Info: Images/SP.png  used on input line 159.
 (pdftex.def)             Requested size: 316.18369pt x 237.13776pt.
- [4 <./Images/ergeb.png (PNG copy)>]
-<Images/egm96.png, id=69, 526.96875pt x 395.22656pt>
+ [5 <./Images/ergeb.png (PNG copy)>]
+<Images/egm96.png, id=76, 526.96875pt x 395.22656pt>
 File: Images/egm96.png Graphic file (type png)
 <use Images/egm96.png>
-Package pdftex.def Info: Images/egm96.png  used on input line 125.
+Package pdftex.def Info: Images/egm96.png  used on input line 168.
 (pdftex.def)             Requested size: 316.18369pt x 237.13776pt.
-<Images/diff.png, id=71, 526.96875pt x 395.22656pt>
+<Images/diff.png, id=78, 526.96875pt x 395.22656pt>
 File: Images/diff.png Graphic file (type png)
 <use Images/diff.png>
-Package pdftex.def Info: Images/diff.png  used on input line 134.
+Package pdftex.def Info: Images/diff.png  used on input line 177.
 (pdftex.def)             Requested size: 316.18369pt x 237.13776pt.
- [5 <./Images/SP.png (PNG copy)> <./Images/egm96.png (PNG copy)>]) [6 <./Images
-/diff.png (PNG copy)>]
+ [6 <./Images/SP.png (PNG copy)> <./Images/egm96.png (PNG copy)>]
+<Images/greenpot.png, id=87, 526.96875pt x 395.22656pt>
+File: Images/greenpot.png Graphic file (type png)
+<use Images/greenpot.png>
+Package pdftex.def Info: Images/greenpot.png  used on input line 186.
+(pdftex.def)             Requested size: 316.18369pt x 237.13776pt.
+<Images/greendiff.png, id=89, 526.96875pt x 395.22656pt>
+File: Images/greendiff.png Graphic file (type png)
+<use Images/greendiff.png>
+Package pdftex.def Info: Images/greendiff.png  used on input line 195.
+(pdftex.def)             Requested size: 316.18369pt x 237.13776pt.
+ [7 <./Images/diff.png (PNG copy)> <./Images/greenpot.png (PNG copy)>]) [8 <./I
+mages/greendiff.png (PNG copy)>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
 
@@ -1352,10 +1363,10 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  ) 
 Here is how much of TeX's memory you used:
- 28166 strings out of 492453
- 554584 string characters out of 3120076
- 762618 words of memory out of 3000000
- 32136 multiletter control sequences out of 15000+200000
+ 28189 strings out of 492453
+ 554956 string characters out of 3120076
+ 764618 words of memory out of 3000000
+ 32150 multiletter control sequences out of 15000+200000
  561486 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,20n,84p,10089b,881s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1372,9 +1383,9 @@ C:/Users/nichs/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi
 8a.pfb><C:/Users/nichs/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palati
 no/uplr8a.pfb><C:/Users/nichs/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
 /palatino/uplri8a.pfb>
-Output written on report.pdf (7 pages, 264972 bytes).
+Output written on report.pdf (9 pages, 346004 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 140 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

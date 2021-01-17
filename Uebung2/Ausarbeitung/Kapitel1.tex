@@ -12,10 +12,10 @@ U^{Ell}(\lambda,\beta,u) = \left(U_0 - \dfrac{\omega^2 a^2}{3}\right) \dfrac{Q_{
 
 mit $E = \sqrt{a^2 - b^2}$, und 
 
-\begin{align*}
+\begin{align}
 Q_{0,0}^{*}\left(\dfrac{u}{E}\right) &= \arctan \left(\dfrac{E}{u}\right) \\
 Q_{2,0}^{*}\left(\dfrac{b}{E}\right) &= \dfrac{1}{2} \left[\left(3 \left(\dfrac{b}{E}\right)^2+1\right) \text{arccot} \left(\dfrac{b}{E}\right)-3 \left(\dfrac{b}{E}\right)\right]
-\end{align*}
+\end{align}
 
 Die Darstellung des Normalpotentials in sphärischen Koordinaten lautet: 
 
@@ -49,13 +49,13 @@ Der Grenzwert liegt bei $GM$. Dementsprechend kann davon ausgegangen werden, das
 \lim_{r \rightarrow \infty} r \cdot U^{Ell}(\lambda,\beta,u) = \lim_{r \rightarrow \infty} r \cdot \left(\left(U_0 - \dfrac{\omega^2 a^2}{3}\right) \dfrac{Q_{0,0}^{*}\left(\dfrac{u}{E}\right)}{{Q_{0,0}^{*}\left(\dfrac{b}{E}\right)}} + \dfrac{\omega^2 a^2 Q_{2,0}^{*}\left(\dfrac{u}{E}\right)}{3 Q_{2,0}^{*}\left(\dfrac{b}{E}\right)} P_{2,0}(\sin \beta)\right) = GM
 \end{align*}
 
-Im Anschluss geht es darum einen Zusammenhang zwischen den fünf definierenden Größen ($a,b,\omega,GM,U_0$) zu erreichen, indem kleine Größen vernachlässigt werden. Zunächst müssen allerdings die Funktionen $Q_{0,0}^{*}$ und $Q_{2,0}^{*}$ durch die ersten Terme ihrer Taylorreihen approximiert werden. Wie oben beschrieben gilt: 
+Im Anschluss geht es darum einen Zusammenhang zwischen den fünf definierenden Größen ($a,b,\omega,GM,U_0$) zu erreichen, indem kleine Größen vernachlässigt werden. Anmerkung: $u$ verhält sich genauso wie $r$. Zunächst müssen allerdings die Funktionen $Q_{0,0}^{*}$ und $Q_{2,0}^{*}$ durch die ersten Terme ihrer Taylorreihen approximiert werden. Wie oben beschrieben gilt: 
 
 \begin{align*}
 Q_{0,0}^{*} = \arctan \left(\dfrac{E}{u}\right)
 \end{align*}
 
-Die Reihenentwicklung des $\arctan$ lautet: 
+Die Reihenentwicklung des $\arctan$ lautet im Bereich $-1 < x < 1$:  
 
 \begin{align*}
 \arctan(x) = x- \dfrac{x^3}{3} + \dfrac{x^5}{5} + ...
@@ -86,13 +86,56 @@ Q_{2,0}^{*}\left(\dfrac{b}{E}\right) = \dfrac{1}{2} \left[\left(3 \left(\dfrac{b
 Daraus ergibt sich für die Approximation: 
 
 \begin{align*}
-Q_{2,0}^{*}\left(\dfrac{b}{E}\right) \dfrac{1}{2} \left[\left(3 \left(\dfrac{b}{E}\right)^2+1\right) \cdot \left(\left(\dfrac{E}{b}\right)-\dfrac{\left(\dfrac{E}{b}\right)^3}{3}+\dfrac{\left(\dfrac{E}{b}\right)^5}{5}+...\right)-3 \left(\dfrac{b}{E}\right)\right]
+Q_{2,0}^{*}\left(\dfrac{u}{E}\right) = \dfrac{1}{2} \left[\left(3 \left(\dfrac{u}{E}\right)^2+1\right) \cdot \left(\left(\dfrac{E}{u}\right)-\dfrac{\left(\dfrac{E}{u}\right)^3}{3}+\dfrac{\left(\dfrac{E}{u}\right)^5}{5}+...\right)-3 \left(\dfrac{u}{E}\right)\right]
 \end{align*}
 
 \begin{align*}
 \approx \dfrac{2}{15} \left(\dfrac{E}{u}\right)^3 + \dfrac{1}{10} \left(\dfrac{E}{u}\right)^5
 \end{align*}
 
+Genauso wird berechnet: 
+
+\begin{align*}
+Q_{2,0}^{*}\left(\dfrac{b}{E}\right) = \dfrac{1}{2} \left[\left(3 \left(\dfrac{b}{E}\right)^2+1\right) \cdot \left(\left(\dfrac{E}{b}\right)-\dfrac{\left(\dfrac{E}{b}\right)^3}{3}+\dfrac{\left(\dfrac{E}{b}\right)^5}{5}+...\right)-3 \left(\dfrac{b}{E}\right)\right]
+\end{align*}
+
+\begin{align*}
+\approx \dfrac{2}{15} \left(\dfrac{E}{b}\right)^3 + \dfrac{1}{10} \left(\dfrac{E}{b}\right)^5
+\end{align*}
+
+Um nun zurück zum Zusammenhang der fünf definierenden Größen zu kommen, wird die Grenzwertbetrachtung von oben herangezogen: 
+
+\begin{align*}
+\lim_{r \rightarrow \infty} r \cdot U^{Ell}(\lambda,\beta,u) = GM 
+\end{align*}
+
+Jetzt können die Funktionen $Q_{0,0}^{*}$ und $Q_{2,0}^{*}$ eingesetzt werden. Außerdem können bestimmte kleine Größen vernachlässigt werden. 
+
+\begin{align*}
+GM = \lim_{r \rightarrow \infty} u \sqrt{1 + \dfrac{E^2 \cos^2 \beta}{r^2 - E^2 \cos^2 \beta}} \cdot \left(\left(U_0 - \dfrac{\omega^2 a^2}{3}\right) \dfrac{Q_{0,0}^{*}\left(\dfrac{u}{e}\right)}{Q_{0,0}^{*}\left(\dfrac{b}{E}\right)} + \dfrac{\omega^2 a^2}{3} \dfrac{Q_{2,0}^{*}\left(\dfrac{u}{E}\right)}{\left(\dfrac{b}{E}\right)} P_{2,0} (\sin \beta)\right)
+\end{align*}
+
+\begin{gather*}
+= \lim_{r \rightarrow \infty} u \sqrt{1 + \dfrac{E^2 \cos^2 \beta}{r^2 - E^2 \cos^2 \beta}} \cdot \left(\left(U_0 - \dfrac{\omega^2 a^2}{3}\right) \dfrac{\left(E - \dfrac{1}{3} \cdot \dfrac{E^3}{u^2} + \dfrac{1}{5} \cdot \dfrac{E^5}{u^4}\right)}{\left(\dfrac{E}{b} - \dfrac{1}{3} \cdot \left(\dfrac{E}{b}\right)^3 + \dfrac{1}{5} \cdot \left(\dfrac{E}{b}\right)^5\right)} \right) + ...
+\end{gather*}
+
+\begin{gather*}
+... \lim_{r \rightarrow \infty} u \sqrt{1 + \dfrac{E^2 \cos^2 \beta}{r^2 - E^2 \cos^2 \beta}} \cdot \left( \dfrac{\omega^2 a^2}{3} \dfrac{\left(\dfrac{2}{15} \cdot \dfrac{E^3}{u^2} + \dfrac{1}{10} \dfrac{E^5}{u^4}\right)}{\left(\dfrac{2}{15} \left(\dfrac{E}{b}\right)^3 + \dfrac{1}{10} \cdot \left(\dfrac{E}{b}\right)^5\right)}P_{2,0}(\sin \beta)\right)
+\end{gather*}
+
+Die Vernachlässigung kleiner Größen liefert aus der obigen Berechnung folgenden Zusammenhang:
+
+\begin{gather}
+\dfrac{E \left(U_0 - \dfrac{\omega^2 a^2}{3}\right)}{\left(\dfrac{E}{b} - \dfrac{1}{3} \cdot \left(\dfrac{E}{b}\right)^3 + \dfrac{1}{5} \left(\dfrac{E}{b}\right)^5\right)} = GM
+\end{gather}
+
+beziehungsweise: 
+
+\begin{align*}
+U_0 = \dfrac{GM}{E} \left(\left(\dfrac{E}{b}\right) - \dfrac{1}{3} \cdot \left(\dfrac{E}{b}\right)^3 + \dfrac{1}{5} \left(\dfrac{E}{b}\right)^5\right) + \dfrac{\omega^2 a^2}{3} = 62636858.4850 \dfrac{m^2}{s^2}
+\end{align*}
+
+Nun ist eine Darstellung des konstanten Normalpotentials erreicht, welches von den vier anderen definierenden Größen $a,b,\omega$ und $GM$ abhängt. 
 
 
 \section*{Aufgabe 2}
@@ -136,7 +179,25 @@ Abbildung \ref{egm96} stellt das volle Schwerepotential zum Grad $L_{max}=36$ da
 	\label{diff}
 \end{figure}
 
-In Abbildung \ref{diff} sieht man die Differenz der beiden Potentiale dargestellt als farbcodierte Erdkarten. 
+In Abbildung \ref{diff} sieht man die Differenz der beiden Potentiale dargestellt als farbcodierte Erdkarten. Bei genauerer Betrachtung fällt auf, dass die Differenz in etwa der Gestalt der Kontinente der Erde ähnelt. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{greenpot.png}
+	\caption{Normalpotential entlang des Greenwich Meridians}
+	\label{greenpot}
+\end{figure}
+
+Abbildung \ref{greenpot} stellt die Ergebnisse entlang des Meridians durch Greenwich dar. Bemerkbar ist auch hier, dass ein Maximum am Äquator zu finden ist und, dass sich die Ergebnisse von Somigliana-Pizzetti und EGM96 grob ähneln. Differenzen finden zwar statt, sind aber nicht in einer Graphik den angezeigten Dimensionen zu erkennen. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{greendiff.png}
+	\caption{Differenzen der beiden Potentiale entlang des Greenwich Meridians}
+	\label{greendiff}
+\end{figure}
+
+In Abbildung \ref{greendiff} sind nun die Differenzen der Potentiale dargestellt. Hier ist erkennbar, dass ungefähr am Äquator die Differenzen am geringsten sind. Maxima der Differenzen finden eher in Richtung der Pole statt, insbesondere nahe des Südpols. 
 
  
 \end{enumerate}

@@ -1,30 +1,35 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.2)  2 DEC 2020 11:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2020.5.14)  17 JAN 2021 21:28
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**title.tex
-(./title.tex
-LaTeX2e <2019-10-01> patch level 3
-(./extras/titleheader.tex
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/koma-script/scrreprt.cls
-Document Class: scrreprt 2020/01/24 v3.29 KOMA-Script document class (report)
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-dependent b
+**./title.tex
+(title.tex
+LaTeX2e <2019-10-01> patch level 1
+(extras/titleheader.tex
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrrep
+rt.cls"
+Document Class: scrreprt 2019/10/12 v3.27 KOMA-Script document class (report)
+
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrkba
+se.sty"
+Package: scrkbase 2019/10/12 v3.27 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
 
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent 
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrbas
+e.sty"
+Package: scrbase 2019/10/12 v3.27 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlfi
+le.sty"
+Package: scrlfile 2019/10/12 v3.27 KOMA-Script package (loading files)
 )))
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2020/01/24 v3.29 KOMA-Script package (handling toc-files)
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\tocbas
+ic.sty"
+Package: tocbasic 2019/10/12 v3.27 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box27
 )
@@ -32,14 +37,16 @@ Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `toc' on input line 137.
 Class scrreprt Info: File `scrsize11pt.clo' used to setup font sizes on input l
-ine 2421.
+ine 2417.
 
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2020/01/24 v3.29 KOMA-Script font size class option (11pt
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrsiz
+e11pt.clo"
+File: scrsize11pt.clo 2019/10/12 v3.27 KOMA-Script font size class option (11pt
 )
 )
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2020/01/24 v3.29 KOMA-Script package (type area)
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\typear
+ea.sty"
+Package: typearea 2019/10/12 v3.27 KOMA-Script package (type area)
 \ta@bcor=\skip42
 \ta@div=\count80
 
@@ -74,7 +81,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1719.
+(typearea)              on input line 1716.
 )
 \c@part=\count81
 \c@chapter=\count82
@@ -85,59 +92,68 @@ Package typearea Info: These are the values describing the layout:
 \c@subparagraph=\count87
 \scr@dte@chapter@maxnumwidth=\skip47
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\chapter on input line 5547.
+(scrreprt)           for `\chapter on input line 5525.
 \scr@dte@section@maxnumwidth=\skip48
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\section on input line 5557.
+(scrreprt)           for `\section on input line 5535.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\section on input line 5557.
+(scrreprt)           for `\section on input line 5535.
 \scr@dte@part@maxnumwidth=\skip49
 Class scrreprt Info: using compatibility default `afterindent=true'
-(scrreprt)           for `\part on input line 5566.
+(scrreprt)           for `\part on input line 5544.
 \scr@dte@subsection@maxnumwidth=\skip50
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\subsection on input line 5576.
+(scrreprt)           for `\subsection on input line 5554.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\subsection on input line 5576.
+(scrreprt)           for `\subsection on input line 5554.
 \scr@dte@subsubsection@maxnumwidth=\skip51
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\subsubsection on input line 5586.
+(scrreprt)           for `\subsubsection on input line 5564.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\subsubsection on input line 5586.
+(scrreprt)           for `\subsubsection on input line 5564.
 \scr@dte@paragraph@maxnumwidth=\skip52
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\paragraph on input line 5596.
+(scrreprt)           for `\paragraph on input line 5574.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\paragraph on input line 5596.
+(scrreprt)           for `\paragraph on input line 5574.
 \scr@dte@subparagraph@maxnumwidth=\skip53
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\subparagraph on input line 5606.
+(scrreprt)           for `\subparagraph on input line 5584.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\subparagraph on input line 5606.
+(scrreprt)           for `\subparagraph on input line 5584.
 \abovecaptionskip=\skip54
 \belowcaptionskip=\skip55
 \c@pti@nb@sid@b@x=\box28
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 6842.
+(tocbasic)             for `lof' on input line 6808.
 \scr@dte@figure@maxnumwidth=\skip56
 \c@figure=\count88
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 6859.
+(tocbasic)             for `lot' on input line 6825.
 \scr@dte@table@maxnumwidth=\skip57
 \c@table=\count89
-Class scrreprt Info: Redefining `\numberline' on input line 7028.
+Class scrreprt Info: Redefining `\numberline' on input line 6994.
 \bibindent=\dimen102
-) (f:/texlive/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
+)
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
+sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
 
-(f:/texlive/texlive/2019/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(f:/texlive/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
-))
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.s
+ty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.
+sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.
+sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
 \Gm@cnth=\count90
 \Gm@cntv=\count91
 \c@Gm@tempcnt=\count92
@@ -150,65 +166,75 @@ Package: iftex 2019/11/07 v1.0c TeX engine tests
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-)
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
+cfg"))
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def"
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/base/latin1.def
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\latin1.def"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-))
-(f:/texlive/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/01/15 3.38 The Babel package
+)) ("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.s
+ty"
+Package: babel 2019/10/15 3.35 The Babel package
 
-(f:/texlive/texlive/2019/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2020/01/15 3.38 Babel switching mechanism
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def
+"
+File: switch.def 2019/10/15 3.35 Babel switching mechanism
 )
-(f:/texlive/texlive/2019/texmf-dist/tex/generic/babel-german/ngerman.ldf
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\ngerm
+an.ldf"
 Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
 phy)
 
-(f:/texlive/texlive/2019/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\ngerm
+anb.ldf"
 Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
 aphy)
 
-(f:/texlive/texlive/2019/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/01/15 3.38 Babel common definitions
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2019/10/15 3.35 Babel common definitions
 \babel@savecnt=\count93
 \U@D=\dimen111
 
-(f:/texlive/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@readstream=\read1
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
+ef")
 \bbl@dirlevel=\count94
 )
 Package babel Info: Making " an active character on input line 121.
 ))
-(f:/texlive/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\engl
+ish.ldf"
 Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: \l@canadian = using hyphenrules for english
-(babel)             (\language0) on input line 102.
-Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language21) on input line 105.
-Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language21) on input line 108.
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
 ))
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/ellipsis/ellipsis.sty
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ellipsis\ellipsis.
+sty"
 Package: ellipsis 2004/9/28 v1.6 ellipsis: fixes spacing around \protect \globa
 l \let \T1\textellipsis .\kern \fontdimen 3\font .\kern \fontdimen 3\font .\ker
 n \fontdimen 3\font \T1\textellipsis 
 
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/tools/xspace.sty
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-))
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/base/fixltx2e.sty
+)) ("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fixltx2e.s
+ty"
 Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
 Applying: [2015/01/01] Old fixltx2e package on input line 46.
 
@@ -218,37 +244,45 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                See the latexrelease package for details.
 
 Already applied: [0000/00/00] Old fixltx2e package on input line 53.
-) (f:/texlive/texlive/2019/texmf-dist/tex/latex/psnfss/mathpazo.sty
+)
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\mathpazo.st
+y"
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
 )
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/psnfss/helvet.sty
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\helvet.sty"
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/psnfss/courier.sty
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\courier.sty
+"
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
+sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
+sty"
+Package: graphics 2019/10/08 v1.3c Standard LaTeX Graphics (DPC,SPQR)
 
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
+ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
+x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
+sty"
 \lst@mode=\count95
 \lst@gtempboxa=\box29
 \lst@token=\toks18
@@ -262,13 +296,15 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \lst@lineno=\count100
 \lst@maxwidth=\dimen117
 
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
+ty"
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 \c@lstnumber=\count101
 \lst@skipnumbers=\count102
 \lst@framebox=\box30
 )
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
+cfg"
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
@@ -278,8 +314,7 @@ Package scrkbase Info: You've told me to redefine the font selection of the
 Package scrkbase Info: You've told me to redefine the font selection of the
 (scrkbase)             element `pagehead' that is an alias of element
 (scrkbase)             `pageheadfoot' on input line 41.
-)
-(./title.aux)
+) (title.aux)
 \openout1 = `title.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -296,7 +331,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 7.
 
- (f:/texlive/texlive/2019/texmf-dist/tex/latex/psnfss/t1ppl.fd
+
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 Package scrbase Info: activating english \contentsname on input line 7.
@@ -339,7 +375,9 @@ Package scrbase Info: activating english \listtablename on input line 7.
 
 LaTeX Info: Redefining \dots on input line 7.
 \big@size=\dimen118
-(f:/texlive/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
+df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
 \scratchdimen=\dimen119
@@ -352,15 +390,61 @@ LaTeX Info: Redefining \dots on input line 7.
 \MPnumerator=\count107
 \makeMPintoPDFobject=\count108
 \everyMPtoPDFconversion=\toks20
-) (f:/texlive/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
+)
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
+base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infware
+rr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.st
+y"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdefin
+ekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds
+.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions
+.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetke
+ys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcmd
+s.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluate
+x.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)))) ("C:\Program Files\MiKTeX 2.9\tex/latex\pdftexcmds\pdftexcmds.sty"
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic\iftex\iftex.sty"
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
 \c@lstlisting=\count109
 <Images/GIlogoOrange_BG_white_Rund.png, id=1, 376.40625pt x 376.40625pt>
 File: Images/GIlogoOrange_BG_white_Rund.png Graphic file (type png)
@@ -371,31 +455,30 @@ ine 12.
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
 3.
 
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
 13.
-
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/psnfss/omlzplm.fd
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omlzplm.fd"
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
 13.
-
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/psnfss/omszplm.fd
+ ("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omszplm.fd
+"
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
 13.
 
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/psnfss/omxzplm.fd
+("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omxzplm.fd"
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
 13.
-
-(f:/texlive/texlive/2019/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+ ("C:\Users\nichs\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1zplm.fd
+"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 <Images/logo_uni-stuttgart.pdf, id=3, 455.71254pt x 455.71254pt>
@@ -429,24 +512,24 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 9--62
 
 [1
 
-{f:/texlive/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Image
-s/GIlogoOrange_BG_white_Rund.png> <./Images/logo_uni-stuttgart.pdf>]
-(./title.aux) ) 
+{C:/Users/nichs/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/GI
+logoOrange_BG_white_Rund.png> <./Images/logo_uni-stuttgart.pdf>] (title.aux) ) 
 Here is how much of TeX's memory you used:
- 6795 strings out of 492162
- 117802 string characters out of 6125271
- 311770 words of memory out of 5000000
- 11074 multiletter control sequences out of 15000+600000
- 24412 words of font info for 54 fonts, out of 8000000 for 9000
+ 7210 strings out of 492453
+ 127786 string characters out of 3120076
+ 317013 words of memory out of 3000000
+ 11439 multiletter control sequences out of 15000+200000
+ 24412 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,8n,84p,10127b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
-{f:/texlive/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}
-<f:/texlive/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><f:/tex
-live/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on title.pdf (1 page, 44942 bytes).
+ 52i,8n,84p,10093b,271s stack positions out of 5000i,500n,10000p,200000b,50000s
+{
+C:/Users/nichs/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C
+:/Users/nichs/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a
+.pfb><C:/Users/nichs/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino
+/uplr8a.pfb>
+Output written on title.pdf (1 page, 47282 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
+ 22 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
