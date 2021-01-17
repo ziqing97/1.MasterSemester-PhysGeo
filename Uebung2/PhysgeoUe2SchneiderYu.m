@@ -4,7 +4,7 @@ clearvars
 %%
 % path zur shbundle, EGM96.mat war vorher erzeugt
 addpath(genpath('E:\Studium\M1-Physgeo\PhysGeoUebung\shbundle-master\shbundle-master'))
-load('EGM96.mat')
+load('PhysgeoUe2SchneiderYuEGM96.mat')
 
 % Konstanten
 GM = 3.986004415e14;
@@ -63,9 +63,6 @@ end
 U8n = GM / r * (1 - U_mittelwert) + omega^2 / 2 * r^2 .* (cos(phi)).^2;
 U8 = GM / r * (1 - U_mittelwert);
 U8map = repmat(U8',1,360);
-
-
-
 
 figure
 hm = imagesc(U8map);
