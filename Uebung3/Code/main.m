@@ -46,11 +46,6 @@ N2 = GeoidHeight(P2,ga_all,phi01,phi02);
 N3 = GeoidHeight(P3,ga_all,phi01,phi02);
 
 
-
-
-
-
-
 function[g,m,s]=g2gms(r)
 % Umrechnen von dezimale Grad in Grad, Minuten und Sekunden
 % Eingabe: r in Dezimal Grad 
@@ -99,7 +94,7 @@ PM = [(Bmax + Bmin)/2, (Lmax + Lmin)/2]; % Koordinaten der Mittelpunkten in Grad
 dg = ga_all(:,1) * 1e-5; % Schwer Anomalie to m/s^2
 Phi = SphAbs(P(2),PM(:,2),P(1),PM(:,1));  % in Grad
 St_F = StFun(Phi);
-Fla_Int = (Lmax - Lmin) .* (sind(Bmax) - sind(Bmin));
+Fla_Int = (Lmax - Lmin)/180*pi .* (sind(Bmax) - sind(Bmin));
 
 id = (Phi<phi01 | Phi>phi02);
 
