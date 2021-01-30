@@ -97,11 +97,11 @@ Phi = SphAbs(P(2),PM(:,2),P(1),PM(:,1));  % in Grad
 St_F = StFun(Phi);
 Fla_Int = (Lmax - Lmin)/180*pi .* (sind(Bmax) - sind(Bmin)); 
 
-% id = (Phi<phi01 | Phi>phi02);
-% 
-% St_F = St_F(id);
-% dg = dg(id);
-% Fla_Int = Fla_Int(id);
+id = (Phi~=phi01 | Phi~=phi02);
+
+St_F = St_F(id);
+dg = dg(id);
+Fla_Int = Fla_Int(id);
 
 dN = R / (4 * gamma * pi) .* St_F .* dg .* Fla_Int;
 N = sum(dN);
