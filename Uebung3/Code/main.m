@@ -71,7 +71,7 @@ function[SA] = SphAbs(lambda1,lambda2,phi1,phi2)
 % Eingabe: lambda1, lambda2, phi1, phi2: Länge und Breite von Beiden
 % Punkten (in Grad)
 
-% Ausgabe: sphärischer Abstand auf der Einheitskugel (in radiant)
+% Ausgabe: sphärischer Abstand auf der Einheitskugel (in Grad)
 
 SA = acosd(sind(phi1) .* sind(phi2) + cosd(phi1) .* cosd(phi2) .* cosd(lambda1 - lambda2));
 end
@@ -91,17 +91,17 @@ Lmax = ga_all(:,3);
 Lmin = ga_all(:,4);
 
 PM = [(Bmax + Bmin)/2, (Lmax + Lmin)/2]; % Koordinaten der Mittelpunkten in Grad
-dg = ga_all(:,5) * 1e-5; % Schwer Anomalie to m/s^2
+dg = ga_all(:,5) * 1e-5; % Schwer Anomalie in m/s^2
+
 Phi = SphAbs(P(2),PM(:,2),P(1),PM(:,1));  % in Grad
 St_F = StFun(Phi);
-Fla_Int = (Lmax - Lmin)/180*pi .* (sind(Bmax) - sind(Bmin));
+Fla_Int = (Lmax - Lmin)/180*pi .* (sind(Bmax) - sind(Bmin)); 
 
 % id = (Phi<phi01 | Phi>phi02);
 % 
 % St_F = St_F(id);
 % dg = dg(id);
 % Fla_Int = Fla_Int(id);
-
 
 dN = R / (4 * gamma * pi) .* St_F .* dg .* Fla_Int;
 N = sum(dN);
