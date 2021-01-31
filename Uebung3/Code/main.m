@@ -11,11 +11,13 @@ clearvars
 % Implementierung und Visualisierung
 phi = 0:pi/180:pi;
 St = 1 ./ sin(phi/2) - 6 * sin(phi/2) + 1 - 5 * cos(phi) - 3 * cos(phi) .* log(sin(phi/2) + (sin(phi/2)).^2);
+f = figure;
 plot(phi/pi*180,St)
 hold on
 plot(phi/pi*180,zeros(length(0:180)));
-xlabel('\Phi [Grad]')
+xlabel('\psi [Grad]'); ylabel('St(\psi)');
 legend('Stokes Funktion','Null')
+saveas(f,'stokes','png');
 
 % Nullstellen
 syms phis
