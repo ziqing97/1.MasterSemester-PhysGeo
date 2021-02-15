@@ -2,7 +2,7 @@
 % Nicholas Schneider & Ziqing Yu
 clc
 close all
-clear all
+% clear all
 % 
 datafull = importdata('moon_Jan2000.txt');
 data = datafull.data;
@@ -27,11 +27,12 @@ Ylm2 = faktor.*Plm2;
 
 vtidlm = G*mM./r /(2*l+1) .* (Re./r).^l .* Ylm2; 
 vtidlm_15 = vtidlm(15,:);
+
 % b
-lambda_p = 8.33/180*pi;
-phi_p = 48.18/180*pi;
-theta_p = pi/2-phi_p;
-r_p = 6366837;
+lambda_p = 8.33/180*pi; % rad
+phi_p = 48.18/180*pi; % rad
+theta_p = pi/2-phi_p; % rad
+r_p = 6366837; % m
 
 Plm_p = Normalized_Lengendre(2,theta_p);
 Plm_p2 = [Plm_p{3,3},Plm_p{3,2},Plm_p{3,1},Plm_p{3,2},Plm_p{3,3}];
@@ -39,12 +40,14 @@ faktor_p = [sin(2*lambda_p),sin(lambda_p),cos(0*lambda_p),cos(1*lambda_p),cos(2*
 Ylm_p2 = Plm_p2.*faktor_p;
 Ylm_p2 = repmat(Ylm_p2,20,1);
 
-vtid = sum(vtidlm.*Ylm_p2,2).*(r_p/Re).^l;
+vtid = sum(vtidlm.*Ylm_p2.*(r_p/Re).^l,2);
 
 vtid15 = vtid(1:5);
 
 figure
 plot(vtid)
+xlabel('Tag')
+ylabel('W')
 
 % c
 syms rs lambdas phis thetas
@@ -52,23 +55,27 @@ Plms(1) = sqrt(5)/4*(1-3*cos(2*phis));
 Plms(2) = sqrt(15)/2*sin(2*phis); 
 Plms(3) = sqrt(15)/4*(1+cos(2*phis));
 
+clear Ylms
 Ylms(1) = Plms(3)*sin(2*lambdas); % m=-2
 Ylms(2) = Plms(2)*sin(lambdas);   % m=-1 
 Ylms(3) = Plms(1);             % m=0
 Ylms(4) = Plms(2)*cos(lambdas);   % m=1 
 Ylms(5) = Plms(3)*cos(2*lambdas); % m=2
 
-vtids = sum(vtidlm(20,:) .* Ylms)*(rs/Re).^l;
+
+Ylms = repmat(Ylms,20,1);
+
+vtids = sum(vtidlm .* Ylms*(rs/Re).^l,2);
 vdrs = diff(vtids, rs);
 vdlambdas = diff(vtids, lambdas);
 vdphis = diff(vtids, phis);
 
-gtids = [vdrs  vdlambdas/r_p  vdphis/r_p/cos(phi_p)];
+gtids = [vdrs  vdlambdas/rs   vdphis/rs/cos(phi_p)];
 gtid = eval(subs(gtids, [rs lambdas phis], [Re lambda_p phi_p]));
 
 
 %% Aufgabe 2
-t = [1:20]/36525;
+t = [0:19]/36525;
 t = t';
 
 arg1 = 4.226311372109 + 221721.966199140683*t + 0.000030885540*t.^2 - 0.000000031964*t.^3 + 0.000000000154*t.^4;
