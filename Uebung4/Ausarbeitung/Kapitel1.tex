@@ -9,22 +9,27 @@ Gegeben sei der Punkt $P$ mit den sphärischen Koordinaten ($\lambda = 8.33^{\ci
 
 Die Zeitreihe der Koeffizienten $v_{2,m}^{tid}$ vom Grad 2 des vom Mond erzeugten Gezeitenpotentials werden nun berechnet. Dabei werden explizit die Werte vom 15. Januar angegeben. Um die Zeitreihe zu berechnen wird folgende Formel herangezogen: 
 
-\begin{gather*}
-V^{tid}(\lambda, \phi, r) = \sum_{l=2}^{L} \sum_{m=-l}^{l} \left(\dfrac{r}{R}\right)^l v_{l,m}^{tid} \overline{Y}_{l,m}(\lambda,\phi) \\
-v_{l,m}^{tid} = \dfrac{GM_{Moon}}{r_{Moon}} \dfrac{1}{2l+1} \left(\dfrac{R}{r_{Moon}}\right)^l \overline{Y}_{l,m} (\lambda_{Moon},\phi_{Moon}) \\
-= \begin{bmatrix}
+\begin{gather}
+V^{tid}(\lambda, \phi, r) = \sum_{l=2}^{L} \sum_{m=-l}^{l} \left(\dfrac{r}{R}\right)^l v_{l,m}^{tid} \overline{Y}_{l,m}(\lambda,\phi) 
+\label{vtid}
+\end{gather} 
+\begin{gather}
+v_{l,m}^{tid} = \dfrac{GM_{Moon}}{r_{Moon}} \dfrac{1}{2l+1} \left(\dfrac{R}{r_{Moon}}\right)^l \overline{Y}_{l,m} (\lambda_{Moon},\phi_{Moon})
+\end{gather}
+\begin{center}
+$= \begin{bmatrix}
 -0.5885 &  0.4409 &  -0.8039  & -0.0927 & -1.3381
-\end{bmatrix}
-\end{gather*} 
+\end{bmatrix}$
+\end{center}
 
 \item Berechnung des Gezeitenpotentials $v_{tid}$ 
 
-Hier wird das vom Mond erzeugte Gezeitenpotential $v_{tid}$ berechnet. Anschließend werden die Zahlenwerte für den 1. bis 5. Januar angegeben. 
+Hier wird das vom Mond erzeugte Gezeitenpotential $v_{tid}$ berechnet. Anschließend werden die Zahlenwerte für den 1. bis 5. Januar angegeben. Bereits oben erklärt Formel \ref{vtid} die Berechnung des Gezeitenpotentials. Diese wird angewandt und es ergeben sich folgende Ergebnisse für die Tage des ersten bis fünften Januars. 
 
 \begin{gather*}
-v_{tid} = \begin{bmatrix}
+V_{tid} = \begin{bmatrix}
 -1.4564&-1.3540&-1.2456&-1.1379&-1.0388
-\end{bmatrix}
+\end{bmatrix}~[m^2/s^2]
 \end{gather*}
 
 \begin{figure}[H]
@@ -38,16 +43,52 @@ Abbildung \ref{gezpot} zeigt das Gezeitenpotential im Berechnungspunkt für das 
 
 \item Berechnung des Gezeitenvektors $g_{tid}$
 
-Nun wird der zugehörige Gezeitenvektor $g_{tid}$ für den 20. Januar berechnet. Dabei wird das ganze auf Terme vom Grad 2 beschränkt. 
+Nun wird der zugehörige Gezeitenvektor $g_{tid}$ für den 20. Januar berechnet. Dabei wird das ganze auf Terme vom Grad 2 beschränkt. Die Berechnung des Gezeitenvektors lautet wie folgt: 
+
+\begin{gather}
+g_{tid} = \dfrac{\partial V^{tid}}{\partial r} e_r + \dfrac{1}{r} \dfrac{\partial V^{tid}}{\partial \phi} e_{\phi} + \dfrac{1}{r \cos \phi} \dfrac{\partial V^{tid}}{\partial \lambda} e_{\lambda}
+\end{gather}
 
 \begin{gather*}
-g_{tid} = \begin{bmatrix}
--0.4434 &-0.1148 &-0.9148
+= \begin{bmatrix}
+-0.4434 ~\dfrac{m}{s^2} &-0.1148 ~\dfrac{m^2}{s^2} &-0.9148 ~\dfrac{m^2}{s^2}
 \end{bmatrix}
 \end{gather*}
 \end{enumerate}
 
 \section{Gezeitenkatalog HW95}
 
-Aus dem Gezeitenkatalog HW95, welches 12935 Partialtiden der Sonne, des Mondes und einiger Planeten enthält, soll das vom Mond erzeugte Gezeitenpotential $v_{tid}$, sowie der zugehörige Gezeitenvektor $g_{tid}$ für denselben Beobachtunspunkt und dieselben Zeitpunkte wie in Aufgabe 1 berechnet werden. 
+Aus dem Gezeitenkatalog HW95, welches 12935 Partialtiden der Sonne, des Mondes und einiger Planeten enthält, soll das vom Mond erzeugte Gezeitenpotential $v_{tid}$, sowie der zugehörige Gezeitenvektor $g_{tid}$ für denselben Beobachtunspunkt und dieselben Zeitpunkte wie in Aufgabe 1 berechnet werden. Die Gezeitenpotentiale für die Werte des Katalogs werden analog zu Aufgabe 1 berechnet und lauten: 
+
+\begin{gather}
+V_{HW}^{tid} = \begin{bmatrix}
+-1.4625 &-1.3588& -1.2480&-1.1389&-1.0406
+\end{bmatrix}~[m^2/s^2]
+\end{gather}
+
+Diese Ergebnisse beziehen sich, wie Aufgabe 1b), auf die Tage vom ersten bis zum fünften Januar. Die Differenzen zu den Ergebnissen aus Aufgabe 1b) ergeben sich als: 
+
+\begin{gather*}
+\Delta V^{tid} = \begin{bmatrix}
+0.0062 & 0.0048 & 0.0025 & 0.0011 & 0.0018
+\end{bmatrix}~[m^2/s^2]
+\end{gather*} 
+
+Nun wird der Gezeitenvektor für den 20. Januar analog zu Aufgabe 1c) berechnet. Dieser lautet: 
+
+\begin{gather*}
+g_{HW}^{tid} = 10^{-6} \cdot \begin{bmatrix}
+-0.4440 ~\dfrac{m}{s^2} & -0.1166 ~\dfrac{m^2}{s^2} &  -0.9207 ~\dfrac{m^2}{s^2}
+\end{bmatrix} 
+\end{gather*}
+
+Die Differenzen zu Aufgabe 1c) sehen wie folgt aus: 
+
+\begin{gather*}
+\Delta g_{tid} = 10^{-8} \cdot \begin{bmatrix}
+0.0560 ~\dfrac{m}{s^2} &  0.1842 ~\dfrac{m^2}{s^2} &  0.5813 ~\dfrac{m^2}{s^2}
+\end{bmatrix}
+\end{gather*}
+
+Fazit: Die Differenzen zwischen den Ergebnissen von Aufgabe 1 und denen dieser Aufgabe fallen relativ klein aus. Besonders die des Gezeitenvektors sind sehr klein, wobei hinsichtlich der Größenordnung des Vektors sie durchaus nachvollziehbar sind. 
 

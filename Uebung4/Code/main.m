@@ -2,7 +2,7 @@
 % Nicholas Schneider & Ziqing Yu
 clc
 close all
-% clear all
+clear all
 % 
 datafull = importdata('moon_Jan2000.txt');
 data = datafull.data;
@@ -46,8 +46,9 @@ vtid15 = vtid(1:5);
 
 figure
 plot(vtid)
+title('Gezeitenpotential im Berechnungspunkt')
 xlabel('Tag')
-ylabel('W')
+ylabel('V^{tid}[m^2/s^2]')
 
 % c
 syms rs lambdas phis thetas
@@ -165,3 +166,4 @@ for i = 1:20
 end
 
 gtidHW = eval(subs(gtidHWs, [rs lambdas phis], [Re lambda_p phi_p]));
+vtidHW = eval(subs(VHW, [rs lambdas phis], [Re lambda_p phi_p]));
